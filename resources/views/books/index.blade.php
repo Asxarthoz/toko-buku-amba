@@ -13,13 +13,18 @@
 
 <div class="container">
     <h1 class="judul">Manajemen Toko Buku Amba</h1>
-    <img src="{{ asset('gambar/ambapict.png') }}" width="250" style="position: relative; left: 540px;>
+    <img src="{{ asset('gambar/ambapict.png') }}" width="250" style="position: relative; left: 540px;">
 
     <h1>Daftar Buku</h1>
 
-    <form method="GET" class="my-3">
-        <input type="text" name="search" class="form-control" placeholder="Cari buku..." value="{{ $search }}">
+    <form method="GET" action="{{ route('books.index') }}" class="my-3">
+        <div class="input-group">
+            <input type="text" name="search" class="form-control" placeholder="Cari buku..." value="{{ $search }}">
+
+            <button class="btn btn-primary">Cari</button>
+        </div>
     </form>
+
 
     <a href="{{ route('books.create') }}" class="btn btn-primary mb-3">+ Tambah Buku</a>
 
