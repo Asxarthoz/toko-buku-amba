@@ -16,22 +16,22 @@
 
     <div class="mb-3">
         <label>Judul</label>
-        <input type="text" name="title" class="form-control" value="{{ $book->title }}">
+        <input type="text" name="judul" class="form-control" value="{{ $book->title }}">
     </div>
 
     <div class="mb-3">
         <label>Penulis</label>
-        <input type="text" name="author" class="form-control" value="{{ $book->author }}">
+        <input type="text" name="penulis" class="form-control" value="{{ $book->author }}">
     </div>
 
     <div class="mb-3">
         <label>Deskripsi</label>
-        <textarea name="description" class="form-control">{{ $book->description }}</textarea>
+        <textarea name="deskripsi" class="form-control">{{ $book->description }}</textarea>
     </div>
 
     <div class="mb-3">
         <label>Harga</label>
-        <input type="number" name="price" class="form-control" value="{{ $book->price }}">
+        <input type="number" name="harga" class="form-control" value="{{ $book->price }}">
     </div>
 
     <button class="btn btn-success">Update</button>
